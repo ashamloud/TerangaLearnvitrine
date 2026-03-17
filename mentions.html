@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | TerangaLearn</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B0D12',
+                        surface: '#FFFFFF',
+                        surfaceAlt: '#F8F9FA',
+                        accent: '#D4AF37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;700;800;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .carbon-glow {
+            box-shadow: 0 10px 30px -10px rgba(11, 13, 18, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-600 bg-surfaceAlt overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-40 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md carbon-glow">
+                    <i data-lucide="graduation-cap" class="w-5 h-5 text-accent"></i>
+                </div>
+                <span class="font-outfit font-black text-2xl tracking-tight text-primary">
+                    Teranga<span class="text-accent">Learn</span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide">
+                <a href="index.html#formations" class="text-primary/70 hover:text-accent transition-all">Formations</a>
+                <a href="contact.html" class="text-primary/70 hover:text-accent transition-all">Contact</a>
+                <a href="../../bokk-vitrine-html/index.html" class="text-gray-400 hover:text-primary transition-colors text-xs uppercase tracking-widest border-l border-gray-200 pl-8">L'écosystème BOKK</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="bg-primary text-accent px-6 py-2.5 rounded-full font-bold text-sm tracking-wide hover:bg-gray-900 transition-all carbon-glow">
+                    Commencer
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-white text-center border-b border-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/10 text-accent font-bold text-xs uppercase tracking-widest mb-6">
+                <i data-lucide="scale" class="w-4 h-4"></i> Informations Légales
+            </div>
+            <h1 class="font-outfit text-4xl md:text-5xl font-black text-primary mb-6">Mentions Légales</h1>
+            <p class="text-gray-500 font-medium max-w-xl mx-auto">Transparence et conformité de la plateforme d'apprentissage TerangaLearn.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-12 border border-gray-100 shadow-xl shadow-gray-200/40 space-y-12">
+                
+                <div>
+                    <h2 class="text-2xl font-outfit font-black text-primary mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-surfaceAlt rounded-xl flex items-center justify-center border border-gray-200"><i data-lucide="building" class="w-5 h-5 text-accent"></i></div> Éditeur du Site
+                    </h2>
+                    <ul class="space-y-4 text-gray-600 bg-surfaceAlt p-6 rounded-2xl border border-gray-100">
+                        <li><strong>Plateforme :</strong> TerangaLearn (Écosystème BOKK Technologies)</li>
+                        <li><strong>Siège social :</strong> Dakar, Sénégal</li>
+                        <li><strong>Directeur de la publication :</strong> M. Gueladio</li>
+                        <li><strong>Contact :</strong> contact@terangalearn.com</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-outfit font-black text-primary mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-surfaceAlt rounded-xl flex items-center justify-center border border-gray-200"><i data-lucide="server" class="w-5 h-5 text-accent"></i></div> Hébergement
+                    </h2>
+                    <ul class="space-y-4 text-gray-600 bg-surfaceAlt p-6 rounded-2xl border border-gray-100">
+                        <li><strong>Infrastructure :</strong> Google LLC (Firebase)</li>
+                        <li><strong>Vidéos & Médias :</strong> Cloudinary</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-outfit font-black text-primary mb-6 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-surfaceAlt rounded-xl flex items-center justify-center border border-gray-200"><i data-lucide="shield-check" class="w-5 h-5 text-accent"></i></div> Propriété Intellectuelle
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed font-medium">
+                        L'ensemble des contenus pédagogiques (vidéos, textes, quiz, PDF) hébergés sur TerangaLearn restent la propriété intellectuelle de leurs auteurs (les formateurs inscrits). La plateforme TerangaLearn dispose d'une licence d'exploitation pour les diffuser conformément à nos Conditions Générales. Le piratage ou la redistribution non autorisée de ces contenus fera l'objet de poursuites judiciaires.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-12 pb-10 rounded-t-[3rem] mt-10">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center text-xs text-gray-500 font-medium">
+            <p>&copy; 2026 Écosystème BOKK.</p>
+            <div class="flex space-x-6">
+                <a href="conditions.html" class="hover:text-white transition-colors">CGU</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

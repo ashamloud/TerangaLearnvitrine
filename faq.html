@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | TerangaLearn</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B0D12',
+                        surface: '#FFFFFF',
+                        surfaceAlt: '#F8F9FA',
+                        accent: '#D4AF37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;700;800;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        .faq-icon { transition: transform 0.3s ease; }
+        details[open] .faq-icon { transform: rotate(180deg); }
+        .faq-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease; }
+        details[open] .faq-content { grid-template-rows: 1fr; }
+        .faq-inner { overflow: hidden; }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-600 bg-surfaceAlt overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <nav class="fixed w-full z-40 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md">
+                    <i data-lucide="graduation-cap" class="w-5 h-5 text-accent"></i>
+                </div>
+                <span class="font-outfit font-black text-2xl tracking-tight text-primary">
+                    Teranga<span class="text-accent">Learn</span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide">
+                <a href="index.html#formations" class="text-primary/70 hover:text-accent transition-all">Formations</a>
+                <a href="contact.html" class="text-primary/70 hover:text-accent transition-all">Contact</a>
+                <a href="faq.html" class="text-accent transition-all">FAQ</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="bg-primary text-accent px-6 py-2.5 rounded-full font-bold text-sm tracking-wide hover:bg-gray-900 transition-all">
+                    Connexion
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header 1 -->
+    <section class="pt-40 pb-20 bg-white text-center border-b border-gray-100">
+        <div class="container mx-auto px-6">
+            <h1 class="font-outfit text-4xl md:text-5xl font-black text-primary mb-6">Foire Aux Questions</h1>
+            <p class="text-gray-500 font-medium max-w-xl mx-auto">Fonctionnement, certifications et lien avec TerangaJob.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 max-w-3xl">
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden group" open>
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none font-outfit font-bold text-lg text-primary">
+                        <span>Les certificats TerangaLearn sont-ils reconnus ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-accent faq-icon"></i>
+                    </summary>
+                    <div class="faq-content">
+                        <div class="faq-inner px-6 pb-6 text-gray-500 font-medium leading-relaxed">
+                            Oui. L'intégration dans l'écosystème BOKK est notre plus grande force. Chaque certificat obtenu est instantanément vérifiable via un QR code et surtout, il est automatiquement affiché sur votre profil <strong>TerangaJob</strong> (le "LinkedIn" de BOKK), vous donnant un avantage direct lors des recrutements par les entreprises de la plateforme.
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none font-outfit font-bold text-lg text-primary">
+                        <span>Puis-je suivre les cours sans connexion internet (offline) ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-accent faq-icon"></i>
+                    </summary>
+                    <div class="faq-content">
+                        <div class="faq-inner px-6 pb-6 text-gray-500 font-medium leading-relaxed">
+                            Absolument. Si vous êtes sur l'abonnement Premium, vous pouvez télécharger les vidéos, audios et PDF de vos cours depuis l'application mobile lors de votre passage dans une zone Wi-Fi, puis les suivre tranquillement chez vous sans griller votre forfait data.
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none font-outfit font-bold text-lg text-primary">
+                        <span>Comment devenir Formateur sur TerangaLearn ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-accent faq-icon"></i>
+                    </summary>
+                    <div class="faq-content">
+                        <div class="faq-inner px-6 pb-6 text-gray-500 font-medium leading-relaxed">
+                            Contrairement aux plateformes classiques où n'importe qui peut vendre n'importe quoi, nous certifions nos formateurs. Vous devez envoyer un CV via l'espace <a href="contact.html" class="text-accent underline hover:text-primary">Contact (Sujet : Devenir Formateur)</a>. Une fois validé, vous accédez à l'outil de création de cours. TerangaLearn prélève une commission de 30% sur vos ventes. Le retrait se fait par Wave ou virement banquaire.
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden group">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer select-none font-outfit font-bold text-lg text-primary">
+                        <span>Quels sont les moyens de paiement acceptés ?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-accent faq-icon"></i>
+                    </summary>
+                    <div class="faq-content">
+                        <div class="faq-inner px-6 pb-6 text-gray-500 font-medium leading-relaxed">
+                            Nous savons que la carte bancaire n'est pas la norme. Vous pouvez payer votre abonnement (3 000 FCFA/mois) directement via les principaux portefeuilles mobiles au Sénégal : <strong>Wave (intégration automatique), Orange Money, et Free Money</strong>.
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="contact.html" class="inline-block bg-white text-primary px-8 py-3 rounded-xl font-bold border border-gray-200 hover:border-accent hover:text-accent shadow-sm transition-colors">
+                    Une autre question ? Support Technique
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-12 pb-10 rounded-t-[3rem] mt-10">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center text-xs text-gray-500 font-medium">
+            <p>&copy; 2026 Écosystème BOKK.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

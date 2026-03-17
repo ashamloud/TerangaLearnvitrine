@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales & Confidentialité | TerangaLearn</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B0D12',
+                        surface: '#FFFFFF',
+                        surfaceAlt: '#F8F9FA',
+                        accent: '#D4AF37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;700;800;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .carbon-glow {
+            box-shadow: 0 10px 30px -10px rgba(11, 13, 18, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-600 bg-surfaceAlt overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <nav class="fixed w-full z-40 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md carbon-glow">
+                    <i data-lucide="graduation-cap" class="w-5 h-5 text-accent"></i>
+                </div>
+                <span class="font-outfit font-black text-2xl tracking-tight text-primary">
+                    Teranga<span class="text-accent">Learn</span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide">
+                <a href="index.html#formations" class="text-primary/70 hover:text-accent transition-all">Formations</a>
+                <a href="contact.html" class="text-primary/70 hover:text-accent transition-all">Contact</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="bg-primary text-accent px-6 py-2.5 rounded-full font-bold text-sm tracking-wide hover:bg-gray-900 transition-all carbon-glow">
+                    Commencer
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-40 pb-20 bg-white text-center border-b border-gray-100 relative overflow-hidden">
+        <div class="absolute w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px] top-0 left-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="font-outfit text-4xl md:text-5xl font-black text-primary mb-6">Conditions Générales d'Utilisation</h1>
+            <p class="text-gray-500 font-medium max-w-xl mx-auto">Vos droits et obligations sur la plateforme TerangaLearn.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-12 border border-gray-100 shadow-xl shadow-gray-200/40">
+                
+                <div class="prose max-w-none text-gray-600 font-medium space-y-8">
+                    
+                    <div>
+                        <h2 class="text-2xl font-outfit font-black text-primary mb-4">1. Accès au catalogue de formation</h2>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>L'inscription gratuite donne accès au plan "Découverte".</li>
+                            <li>Les abonnements ("Premium", "Pro") sont payables d'avance via Wave, Orange Money ou Free Money.</li>
+                            <li>L'accès aux formations est réservé à un usage personnel. Le partage d'identifiants entraînera la suspension immédiate du compte.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-outfit font-black text-primary mb-4">2. Pour les Formateurs partenaires</h2>
+                        <p class="mb-4">
+                            Tout expert souhaitant publier un cours sur TerangaLearn doit valider son profil (diplôme/expérience). 
+                            TerangaLearn se réserve le droit de refuser un cours si sa qualité (son, image, didactique) n'est pas jugée suffisante pour standard BOKK.
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Le formateur conserve le droit d'auteur sur son cours.</li>
+                            <li>TerangaLearn reverse 70% des revenus générés par la vente individuelle d'un cours (ou selon la clé de répartition pour les abonnés Premium).</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-outfit font-black text-primary mb-4">3. Politique de Confidentialité & RGPD</h2>
+                        <p class="mb-4">
+                            Les données collectées lors de la création de compte (nom, numéro de téléphone, email) servent à :
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Suivre votre progression pédagogique et émettre vos certificats.</li>
+                            <li>Synchroniser vos badges de réussite avec <strong>TerangaJob</strong> (écosystème BOKK).</li>
+                            <li>Assurer la facturation et le support.</li>
+                        </ul>
+                        <p class="mt-4 text-sm text-gray-500 border-l-4 border-accent pl-4">
+                            Vous pouvez à tout moment demander la copie ou la suppression de vos données en contactant notre support.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary pt-12 pb-10 rounded-t-[3rem] mt-10">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center text-xs text-gray-500 font-medium">
+            <p>&copy; 2026 Écosystème BOKK.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
